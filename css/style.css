@@ -32,6 +32,10 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  padding: 10px;
+  column-gap: 10px;
 }
 
 .nav-menu {
@@ -78,12 +82,6 @@ footer a {
   min-width: 100%;
 }
 
-.logo-container {
-  font-size: 1.6rem;
-  color: var(--primary-color);
-  padding: 10px;
-}
-
 /* Slide Image Gallery Animation */
 @keyframes slide-left {
   0% {
@@ -115,7 +113,7 @@ footer a {
   }
 }
 
-/* ------General formatting of the main content area (Containing the Filter sidebar menu and all of the car cards)------- */
+/* ------General formatting of the main content area after the image slideshow (Containing the Filter sidebar menu and all of the car cards)------- */
 .main-content {
   display: flex;
   flex-wrap: wrap;
@@ -131,7 +129,7 @@ footer a {
   font-size: 1.3rem;
 }
 
-/* styling for each filter subcategory */
+/* styling for all filter subcategories */
 .filter-category {
   border-style: solid;
   border-width: 0.5px;
@@ -157,16 +155,19 @@ footer a {
   cursor: pointer;
 }
 
+/* styling for price filter category */
 .price-textfield-container {
   text-align: center;
   padding-bottom: 20px;
 }
 
+/* styling for mileage filter category */
 #mileage {
   display: flex;
   justify-content: center;
 }
 
+/* styinling for the apply and reset buttons at the bottom of the filter */
 .filter-button-container {
   display: flex;
   justify-content: center;
@@ -195,7 +196,9 @@ footer a {
   cursor: pointer;
 }
 
-/* -------Car Card's Stying---------- */
+/* ---------Car Card's Stying---------- */
+
+/* styling for the whole container that houses all of the car cards */
 #car-grid-container {
   display: grid;
   grid-template-rows: repeat(auto-fit, 1fr);
@@ -204,6 +207,7 @@ footer a {
   margin: 3rem;
 }
 
+/* styling for each individual car cards */
 .car-card {
   display: flex;
   flex-direction: column;
