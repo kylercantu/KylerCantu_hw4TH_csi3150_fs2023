@@ -1,0 +1,233 @@
+/*Reset all browser styling*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -----General Styling------- */
+body {
+  --primary-color: #dad7cd;
+  --secondary-color: #132a13;
+  background-color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* -------Navbar Styling--------- */
+.navbar {
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.nav-menu a {
+  color: var(--primary-color);
+  padding: 20px;
+}
+
+.nav-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* -------Footer Styling------- */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 10px;
+}
+
+footer a {
+  color: var(--primary-color);
+}
+
+/* --------Image Gallery Slide Show Styling--------- */
+.image-gallery {
+  overflow: hidden;
+}
+.image-container {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  object-fit: cover;
+  animation: slide-left 20s ease infinite;
+}
+
+.image-container img {
+  min-width: 100%;
+}
+
+.logo-container {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  padding: 10px;
+}
+
+/* Slide Image Gallery Animation */
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(0);
+  }
+
+  35% {
+    transform: translateX(-100%);
+  }
+
+  55% {
+    transform: translateX(-100%);
+  }
+
+  75% {
+    transform: translateX(-200%);
+  }
+
+  90% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* ------General formatting of the main content area (Containing the Filter sidebar menu and all of the car cards)------- */
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ------Sidebar/Filter Menu Styling----- */
+.sidebar-header {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-size: 1.3rem;
+}
+
+/* styling for each filter subcategory */
+.filter-category {
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar-subheading {
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.radio-button-container {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 1.1rem;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 10px;
+}
+
+.radio-button-container input[type="radio"] {
+  cursor: pointer;
+}
+
+.price-textfield-container {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#mileage {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#apply-button {
+  width: 150px;
+  height: 40px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+#reset-button {
+  width: 100px;
+  height: 40px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 1rem;
+  margin: 10px;
+}
+.filter-button-container button:hover {
+  cursor: pointer;
+}
+
+/* -------Car Card's Stying---------- */
+#car-grid-container {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  margin: 3rem;
+}
+
+.car-card {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 0.5px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px;
+}
+
+.car-card h3 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.car-card p {
+  text-align: left;
+  padding: 10px;
+}
+
+.car-card img {
+  flex: 1;
+  object-fit: cover;
+  width: 100%;
+  height: 210px;
+  border-radius: 10px 10px 0 0;
+}

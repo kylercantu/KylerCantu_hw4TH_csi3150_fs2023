@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kyler's Cars</title>
+    <!--Link to favicon-->
+    <link rel="shortcut icon" href="./images/KCicon.png" type="image/x-icon" />
+
+    <!--External css file linkup-->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- External JS file linkup -->
+    <script type="module" src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <header id="page-header">
+      <!--Creates the navigation bar at the top of website-->
+      <nav class="navbar">
+        <!-- Website Logo Container -->
+        <div class="logo-container">
+          <img src="./images/KCicon.png" alt="website logo" height="50" />
+          <span><strong>Kyler's Cars</strong></span>
+        </div>
+
+        <!-- Container for the navbar links -->
+        <div class="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Image slideshow -->
+    <section class="image-gallery">
+      <div class="image-container">
+        <img src="./images/cars/toyota-camry.webp" alt="Toyota Camry" />
+        <img src="./images/cars/nissan-altima.jpg" alt="Toyota Camry" />
+        <img src="./images/cars/honda-civic.jpg" alt="Toyota Camry" />
+        <img src="./images/cars/ford-fusion.jpg" alt="Toyota Camry" />
+      </div>
+    </section>
+
+    <!-- Main content of website -->
+    <main>
+      <!-- Container for the whole page: sidebar + main used cars display -->
+      <div class="main-content">
+        <!-- Sidebar menu -->
+        <section>
+          <!-- Container for the whole side bar -->
+          <div class="sidebar-menu">
+            <!-- Container for sidebar header -->
+            <div class="sidebar-header">
+              <h1>Filter</h1>
+            </div>
+            <!-- Container for the car-year filter -->
+            <div class="car-year-container filter-category">
+              <div class="sidebar-subheading">
+                <h2>Car Year</h2>
+              </div>
+              <div class="radio-button-container">
+                <div>
+                  <input type="radio" name="year" id="cb2015" value="2015" />
+                  <label for="cb2015">2015</label>
+                </div>
+                <div>
+                  <input type="radio" name="year" id="cb2016" value="2016" />
+                  <label for="cb2016">2016</label>
+                </div>
+                <div>
+                  <input type="radio" name="year" id="cb2017" value="2017" />
+                  <label for="cb2017">2017</label>
+                </div>
+                <div>
+                  <input type="radio" name="year" id="cb2018" value="2018" />
+                  <label for="cb2018">2018</label>
+                </div>
+                <div>
+                  <input type="radio" name="year" id="cb2019" value="2019" />
+                  <label for="cb2019">2019</label>
+                </div>
+                <div>
+                  <input type="radio" name="year" id="cb2020" value="2020" />
+                  <label for="cb2025">2020</label>
+                </div>
+                <div>
+                  <input type="radio" name="year" id="cb2021" value="2021" />
+                  <label for="cb2021">2021</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Container for the car-make filter -->
+            <div class="car-make-container filter-category">
+              <div class="sidebar-subheading">
+                <h2>Car Make</h2>
+              </div>
+              <div class="radio-button-container">
+                <div>
+                  <input type="radio" name="make" id="toyota" value="Toyota" />
+                  <label for="toyota">Toyota</label>
+                </div>
+                <div>
+                  <input type="radio" name="make" id="honda" value="Honda" />
+                  <label for="honda">Honda</label>
+                </div>
+                <div>
+                  <input type="radio" name="make" id="ford" value="Ford" />
+                  <label for="ford">Ford</label>
+                </div>
+                <div>
+                  <input type="radio" name="make" id="nissan" value="Nissan" />
+                  <label for="nissan">Nissan</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="make"
+                    id="chevrolet"
+                    value="Chevrolet"
+                  />
+                  <label for="chevrolet">Chevrolet</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="make"
+                    id="volkswagen"
+                    value="Volkswagen"
+                  />
+                  <label for="volkswagen">Volkswagen</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="make"
+                    id="hyundai"
+                    value="Hyundai"
+                  />
+                  <label for="hyundai">Hyundai</label>
+                </div>
+                <div>
+                  <input type="radio" name="make" id="subaru" value="Subaru" />
+                  <label for="subaru">Subaru</label>
+                </div>
+                <div>
+                  <input type="radio" name="make" id="mazda" value="Mazda" />
+                  <label for="mazda">Mazda</label>
+                </div>
+                <div>
+                  <input type="radio" name="make" id="kia" value="Kia" />
+                  <label for="kia">Kia</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Container for mileage filter -->
+            <div class="car-mileage-container filter-category">
+              <div class="sidebar-subheading">
+                <h2>Car Mileage</h2>
+              </div>
+
+              <div class="radio-button-container">
+                <div>
+                  <input
+                    type="radio"
+                    name="mileage"
+                    id="under30k"
+                    value="30000"
+                  />
+                  <label for="under30k">Under 30,000</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="mileage"
+                    id="under60k"
+                    value="60000"
+                  />
+                  <label for="under60k">Under 60,000</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Container for car price filter -->
+            <div class="car-price-container filter-category">
+              <div class="sidebar-subheading">
+                <h2>Price</h2>
+              </div>
+
+              <div class="price-textfield-container">
+                <label for="price-textfield">Max Price</label>
+                <input type="text" name="" id="price-textfield" />
+              </div>
+            </div>
+
+            <!-- Container for car color filter -->
+            <div class="car-color-container filter-category">
+              <div class="sidebar-subheading">
+                <h2>Color</h2>
+              </div>
+
+              <div class="radio-button-container">
+                <div>
+                  <input type="radio" name="color" id="silver" value="Silver" />
+                  <label for="silver">Silver</label>
+                </div>
+                <div>
+                  <input type="radio" name="color" id="white" value="White" />
+                  <label for="white">White</label>
+                </div>
+                <div>
+                  <input type="radio" name="color" id="black" value="Black" />
+                  <label for="black">Black</label>
+                </div>
+                <div>
+                  <input type="radio" name="color" id="blue" value="Blue" />
+                  <label for="blue">Blue</label>
+                </div>
+                <div>
+                  <input type="radio" name="color" id="red" value="Red" />
+                  <label for="red">Red</label>
+                </div>
+                <div>
+                  <input type="radio" name="color" id="gray" value="Gray" />
+                  <label for="gray">Gray</label>
+                </div>
+                <div>
+                  <input type="radio" name="color" id="green" value="Green" />
+                  <label for="green">Green</label>
+                </div>
+              </div>
+            </div>
+            <div class="filter-button-container">
+              <button id="apply-button">Apply Filter</button>
+              <button id="reset-button">Reset Filter</button>
+            </div>
+          </div>
+        </section>
+        <!-- Section containing the whole car cards -->
+        <section id="car-grid-container"></section>
+      </div>
+    </main>
+
+    <!-- Footer of website -->
+    <footer>
+      <span>&copy; 2023 Kyler Cantu |</span>
+      <a href="mailto:kylercantu@oakland.edu">kylercantu@oakland.edu</a>
+    </footer>
+  </body>
+</html>
