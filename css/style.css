@@ -116,7 +116,8 @@ footer a {
 /* ------General formatting of the main content area after the image slideshow (Containing the Filter sidebar menu and all of the car cards)------- */
 .main-content {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 50px;
 }
 
 /* ------Sidebar/Filter Menu Styling----- */
@@ -147,7 +148,6 @@ footer a {
   grid-template-columns: repeat(3, 1fr);
   font-size: 1.1rem;
   row-gap: 10px;
-  column-gap: 10px;
   padding: 10px;
 }
 
